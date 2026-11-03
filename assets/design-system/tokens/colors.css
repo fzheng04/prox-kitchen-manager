@@ -1,0 +1,70 @@
+:root{
+/* Night — headers, nav, featured rows */
+--night-900:#1C2233;
+--night-800:#262E44;
+--night-700:#2F3A55;
+--night-600:#43507094;
+/* Tomato — primary action */
+--tomato-500:#E4572E;
+--tomato-600:#C8461F;
+/* Money — prices, savings */
+--money-600:#1F8A5B;
+--money-100:#DDF0E4;
+/* Sage — soft highlight, empty-state discs */
+--sage-300:#D3E6C8;
+--sage-400:#A9CC97;
+/* Oat — app ground */
+--oat-200:#E9E1D2;
+--oat-100:#F5F0E6;
+--oat-50:#FBF8F2;
+--paper:#FFFDF8;
+--white:#FFFFFF;
+/* Ink — text + outlines */
+--ink:#1E1E24;
+--ink-soft:#3B3B45;
+/* Stone */
+--stone-600:#64646E;
+--stone-500:#80808A;
+--stone-400:#A3A3AC;
+--stone-300:#D2D0CA;
+--stone-200:#E7E3DB;
+/* Mustard — badges, highlights on dark */
+--mustard-500:#E9A23B;
+--mustard-400:#F0B551;
+--mustard-300:#F6CB6E;
+/* Red — missing / destructive */
+--red-500:#B3261E;
+--red-100:#F9DEDA;
+/* Category pairs (tint bg / solid swatch) */
+--cat-produce-bg:#DCEBD3;--cat-produce:#4E9A5B;
+--cat-dairy-bg:#FBF0CF;--cat-dairy:#E0A93A;
+--cat-meat-bg:#F6D9D3;--cat-meat:#D9735F;
+--cat-pantry-bg:#F1E2CC;--cat-pantry:#B48A55;
+--cat-essentials-bg:#D9E3F4;--cat-essentials:#4C72B8;
+--cat-frozen-bg:#E3DDF2;--cat-frozen:#7D6AB8;
+
+/* Semantic aliases */
+--surface-app:var(--oat-100);
+--surface-card:var(--oat-50);
+--surface-raised:var(--white);
+--surface-header:var(--night-900);
+--surface-deep:var(--night-700);
+--surface-input:var(--white);
+--text-primary:var(--ink);
+--text-secondary:var(--stone-600);
+--text-muted:var(--stone-500);
+--text-placeholder:var(--stone-400);
+--text-on-dark:var(--white);
+--text-on-dark-muted:#C3C8D6;
+--text-on-accent:var(--white);
+--border-strong:var(--ink);
+--border-subtle:var(--stone-200);
+--accent:var(--tomato-500);
+--accent-pressed:var(--tomato-600);
+--price:var(--money-600);
+--price-on-dark:var(--mustard-300);
+--indicator:var(--mustard-300);
+--badge:var(--mustard-500);
+--danger:var(--red-500);
+--danger-bg:var(--red-100);
+}

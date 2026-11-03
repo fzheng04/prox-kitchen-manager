@@ -1,0 +1,17 @@
+<!-- @dsCard group="Components" viewport="700x360" name="Core" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:var(--surface-app);font-family:var(--font-body);color:var(--text-primary)}.r{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:18px}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const NS = window.ProxDesignSystem_1e60c5;
+const {Icon,Button,IconButton,Pill,Badge,CategoryChip,SearchField,SegmentedControl,QuantityStepper,Card,EmptyState,ProgressBar,ReasonTag,SavingsCard,AppHeader,TabBar,NotebookList,NotebookRow,RetailerRow} = NS;
+function Demo(){ return <div>
+<div className="r"><Button icon="plus">Add item</Button><Button variant="dark" icon="check">Complete trip</Button><Button variant="secondary" size="sm">Filters</Button><Button variant="ghost" size="sm">Skip</Button><Button disabled size="sm">Disabled</Button></div>
+<div className="r"><Button size="lg" iconRight="arrow-right">Compare stores</Button><IconButton icon="shopping-cart" label="Cart" badge={4}/><IconButton icon="filter" label="Sort" shape="square" size={44}/><IconButton icon="plus" label="Add" variant="primary" size={40}/><div style={{background:'var(--surface-header)',padding:8,borderRadius:30}}><IconButton icon="bell" label="Alerts" variant="glass"/></div></div>
+<div className="r"><CategoryChip category="all" selected/><CategoryChip category="produce"/><CategoryChip category="dairy"/><CategoryChip category="meat"/><CategoryChip category="essentials"/></div>
+<div className="r"><Pill active>Expiry</Pill><Pill>Category</Pill><Pill>Name</Pill><Badge>12% less</Badge><Badge tone="gold">Best deal</Badge><Badge tone="red">Missing 2</Badge><Badge tone="muted">Stale price</Badge></div></div>; }
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>

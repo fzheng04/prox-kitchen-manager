@@ -1,0 +1,18 @@
+:root{
+--font-display:'Bricolage Grotesque','Spline Sans',ui-sans-serif,system-ui,sans-serif;
+--font-body:'Spline Sans',ui-sans-serif,system-ui,sans-serif;
+--font-mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+
+--fs-display:28px;/* @kind font */--lh-display:1.05;/* @kind other */
+--fs-h1:26px;/* @kind font */--lh-h1:1.1;/* @kind other */
+--fs-h2:21px;/* @kind font */--lh-h2:1.15;/* @kind other */
+--fs-h3:18px;/* @kind font */--lh-h3:1.2;/* @kind other */
+--fs-body:16px;/* @kind font */--lh-body:1.4;/* @kind other */
+--fs-sm:14px;/* @kind font */--lh-sm:1.35;/* @kind other */
+--fs-xs:12px;/* @kind font */--lh-xs:1.3;/* @kind other */
+--fs-price-xl:40px;/* @kind font */
+
+--fw-regular:400;/* @kind other */--fw-medium:500;/* @kind other */--fw-semibold:600;/* @kind other */--fw-bold:700;/* @kind other */--fw-heavy:800;/* @kind other */
+--tracking-label:.02em;/* @kind other */
+--tracking-tight:-.01em;/* @kind other */
+}

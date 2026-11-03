@@ -1,0 +1,2237 @@
+{
+  "version": 1,
+  "seedNow": "2026-01-05T09:00:00.000Z",
+  "zips": [
+    {
+      "code": "94110",
+      "label": "Mission (synthetic)"
+    },
+    {
+      "code": "94612",
+      "label": "Uptown (synthetic)"
+    }
+  ],
+  "retailers": [
+    {
+      "id": "freshco",
+      "name": "FreshCo Market",
+      "short": "FC",
+      "priceFactor": 1,
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart",
+      "name": "ValueMart",
+      "short": "VM",
+      "priceFactor": 0.88,
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf",
+      "name": "Greenleaf Grocer",
+      "short": "GG",
+      "priceFactor": 1.12,
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "bananas",
+      "name": "Bananas",
+      "category": "produce",
+      "unit": "ct",
+      "terms": [
+        "banana",
+        "fruit"
+      ]
+    },
+    {
+      "id": "spinach",
+      "name": "Baby spinach",
+      "category": "produce",
+      "unit": "oz",
+      "terms": [
+        "spinach",
+        "greens",
+        "salad"
+      ]
+    },
+    {
+      "id": "apples",
+      "name": "Gala apples",
+      "category": "produce",
+      "unit": "lb",
+      "terms": [
+        "apple",
+        "fruit"
+      ]
+    },
+    {
+      "id": "avocados",
+      "name": "Avocados",
+      "category": "produce",
+      "unit": "ct",
+      "terms": [
+        "avocado"
+      ]
+    },
+    {
+      "id": "tomatoes",
+      "name": "Roma tomatoes",
+      "category": "produce",
+      "unit": "lb",
+      "terms": [
+        "tomato"
+      ]
+    },
+    {
+      "id": "whole-milk",
+      "name": "Whole milk",
+      "category": "dairy",
+      "unit": "gal",
+      "terms": [
+        "milk",
+        "dairy"
+      ]
+    },
+    {
+      "id": "oat-milk",
+      "name": "Oat milk",
+      "category": "dairy",
+      "unit": "fl_oz",
+      "terms": [
+        "milk",
+        "oat",
+        "plant"
+      ]
+    },
+    {
+      "id": "almond-milk",
+      "name": "Almond milk",
+      "category": "dairy",
+      "unit": "fl_oz",
+      "terms": [
+        "milk",
+        "almond",
+        "plant"
+      ]
+    },
+    {
+      "id": "eggs",
+      "name": "Large eggs",
+      "category": "dairy",
+      "unit": "ct",
+      "terms": [
+        "egg"
+      ]
+    },
+    {
+      "id": "greek-yogurt",
+      "name": "Greek yogurt",
+      "category": "dairy",
+      "unit": "oz",
+      "terms": [
+        "yogurt"
+      ]
+    },
+    {
+      "id": "plain-yogurt",
+      "name": "Plain yogurt",
+      "category": "dairy",
+      "unit": "oz",
+      "terms": [
+        "yogurt"
+      ]
+    },
+    {
+      "id": "cheddar",
+      "name": "Sharp cheddar",
+      "category": "dairy",
+      "unit": "oz",
+      "terms": [
+        "cheese",
+        "cheddar"
+      ]
+    },
+    {
+      "id": "butter",
+      "name": "Salted butter",
+      "category": "dairy",
+      "unit": "oz",
+      "terms": [
+        "butter"
+      ]
+    },
+    {
+      "id": "chicken",
+      "name": "Chicken breast",
+      "category": "meat",
+      "unit": "lb",
+      "terms": [
+        "chicken",
+        "poultry"
+      ]
+    },
+    {
+      "id": "ground-beef",
+      "name": "Ground beef",
+      "category": "meat",
+      "unit": "lb",
+      "terms": [
+        "beef",
+        "mince"
+      ]
+    },
+    {
+      "id": "rice",
+      "name": "Jasmine rice",
+      "category": "pantry",
+      "unit": "lb",
+      "terms": [
+        "rice",
+        "grain"
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Spaghetti",
+      "category": "pantry",
+      "unit": "oz",
+      "terms": [
+        "pasta",
+        "noodles"
+      ]
+    },
+    {
+      "id": "olive-oil",
+      "name": "Olive oil",
+      "category": "pantry",
+      "unit": "fl_oz",
+      "terms": [
+        "oil"
+      ]
+    },
+    {
+      "id": "peanut-butter",
+      "name": "Peanut butter",
+      "category": "pantry",
+      "unit": "oz",
+      "terms": [
+        "nut butter",
+        "spread"
+      ]
+    },
+    {
+      "id": "oats",
+      "name": "Rolled oats",
+      "category": "pantry",
+      "unit": "oz",
+      "terms": [
+        "oatmeal",
+        "oat",
+        "cereal"
+      ]
+    },
+    {
+      "id": "honey",
+      "name": "Honey",
+      "category": "pantry",
+      "unit": "oz",
+      "terms": [
+        "sweetener"
+      ]
+    },
+    {
+      "id": "coffee",
+      "name": "Ground coffee",
+      "category": "pantry",
+      "unit": "oz",
+      "terms": [
+        "coffee"
+      ]
+    },
+    {
+      "id": "bread",
+      "name": "Sandwich bread",
+      "category": "pantry",
+      "unit": "ct",
+      "terms": [
+        "loaf",
+        "bread"
+      ]
+    },
+    {
+      "id": "paper-towels",
+      "name": "Paper towels",
+      "category": "essentials",
+      "unit": "ct",
+      "terms": [
+        "towel",
+        "paper"
+      ]
+    },
+    {
+      "id": "dish-soap",
+      "name": "Dish soap",
+      "category": "essentials",
+      "unit": "fl_oz",
+      "terms": [
+        "soap",
+        "detergent"
+      ]
+    },
+    {
+      "id": "frozen-peas",
+      "name": "Frozen peas",
+      "category": "frozen",
+      "unit": "oz",
+      "terms": [
+        "peas",
+        "vegetables"
+      ]
+    },
+    {
+      "id": "frozen-berries",
+      "name": "Frozen mixed berries",
+      "category": "frozen",
+      "unit": "oz",
+      "terms": [
+        "berries",
+        "fruit"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "freshco-bananas-1",
+      "retailerId": "freshco",
+      "itemId": "bananas",
+      "brand": "Field Day",
+      "name": "Field Day bananas",
+      "size": 1,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 29,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-spinach-1",
+      "retailerId": "freshco",
+      "itemId": "spinach",
+      "brand": "Field Day",
+      "name": "Field Day baby spinach",
+      "size": 5,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 349,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-spinach-2",
+      "retailerId": "freshco",
+      "itemId": "spinach",
+      "brand": "Sunrow",
+      "name": "Sunrow baby spinach",
+      "size": 5,
+      "unit": "oz",
+      "organic": true,
+      "priceCents": 449,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-apples-1",
+      "retailerId": "freshco",
+      "itemId": "apples",
+      "brand": "Field Day",
+      "name": "Field Day gala apples",
+      "size": 3,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 499,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-avocados-1",
+      "retailerId": "freshco",
+      "itemId": "avocados",
+      "brand": "Field Day",
+      "name": "Field Day avocados",
+      "size": 4,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 499,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110"
+      ]
+    },
+    {
+      "id": "freshco-tomatoes-1",
+      "retailerId": "freshco",
+      "itemId": "tomatoes",
+      "brand": "Field Day",
+      "name": "Field Day roma tomatoes",
+      "size": 1,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 229,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-whole-milk-1",
+      "retailerId": "freshco",
+      "itemId": "whole-milk",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill whole milk",
+      "size": 1,
+      "unit": "gal",
+      "organic": false,
+      "priceCents": 479,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-whole-milk-2",
+      "retailerId": "freshco",
+      "itemId": "whole-milk",
+      "brand": "Sunrow",
+      "name": "Sunrow whole milk",
+      "size": 0.5,
+      "unit": "gal",
+      "organic": true,
+      "priceCents": 429,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-oat-milk-1",
+      "retailerId": "freshco",
+      "itemId": "oat-milk",
+      "brand": "Rolling Oat",
+      "name": "Rolling Oat oat milk",
+      "size": 64,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 449,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-almond-milk-1",
+      "retailerId": "freshco",
+      "itemId": "almond-milk",
+      "brand": "Grove",
+      "name": "Grove almond milk",
+      "size": 64,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 389,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-eggs-1",
+      "retailerId": "freshco",
+      "itemId": "eggs",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill large eggs",
+      "size": 12,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 399,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ],
+      "special": {
+        "priceCents": 249,
+        "endsAt": "2026-01-04T09:00:00.000Z"
+      }
+    },
+    {
+      "id": "freshco-eggs-2",
+      "retailerId": "freshco",
+      "itemId": "eggs",
+      "brand": "Sunrow",
+      "name": "Sunrow large eggs",
+      "size": 12,
+      "unit": "ct",
+      "organic": true,
+      "priceCents": 599,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-greek-yogurt-1",
+      "retailerId": "freshco",
+      "itemId": "greek-yogurt",
+      "brand": "Kalos",
+      "name": "Kalos greek yogurt",
+      "size": 32,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 599,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-plain-yogurt-1",
+      "retailerId": "freshco",
+      "itemId": "plain-yogurt",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill plain yogurt",
+      "size": 32,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 379,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-cheddar-1",
+      "retailerId": "freshco",
+      "itemId": "cheddar",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill sharp cheddar",
+      "size": 8,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 449,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-butter-1",
+      "retailerId": "freshco",
+      "itemId": "butter",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill salted butter",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 549,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-chicken-1",
+      "retailerId": "freshco",
+      "itemId": "chicken",
+      "brand": "Ridgeway",
+      "name": "Ridgeway chicken breast",
+      "size": 2,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 899,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-ground-beef-1",
+      "retailerId": "freshco",
+      "itemId": "ground-beef",
+      "brand": "Ridgeway",
+      "name": "Ridgeway ground beef",
+      "size": 1,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 649,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-rice-1",
+      "retailerId": "freshco",
+      "itemId": "rice",
+      "brand": "Lotus Bay",
+      "name": "Lotus Bay jasmine rice",
+      "size": 5,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 799,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-pasta-1",
+      "retailerId": "freshco",
+      "itemId": "pasta",
+      "brand": "Nonna Lu",
+      "name": "Nonna Lu spaghetti",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 199,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ],
+      "special": {
+        "priceCents": 129,
+        "endsAt": "2026-01-09T09:00:00.000Z"
+      }
+    },
+    {
+      "id": "freshco-olive-oil-1",
+      "retailerId": "freshco",
+      "itemId": "olive-oil",
+      "brand": "Costa Verde",
+      "name": "Costa Verde olive oil",
+      "size": 16.9,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 899,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-peanut-butter-1",
+      "retailerId": "freshco",
+      "itemId": "peanut-butter",
+      "brand": "Value Pick",
+      "name": "Value Pick peanut butter",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 299,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-peanut-butter-2",
+      "retailerId": "freshco",
+      "itemId": "peanut-butter",
+      "brand": "Hillside",
+      "name": "Hillside peanut butter",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 449,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-oats-1",
+      "retailerId": "freshco",
+      "itemId": "oats",
+      "brand": "Lotus Bay",
+      "name": "Lotus Bay rolled oats",
+      "size": 42,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 499,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-honey-1",
+      "retailerId": "freshco",
+      "itemId": "honey",
+      "brand": "Bee Line",
+      "name": "Bee Line honey",
+      "size": 12,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 699,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-coffee-1",
+      "retailerId": "freshco",
+      "itemId": "coffee",
+      "brand": "Night Owl",
+      "name": "Night Owl ground coffee",
+      "size": 12,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 999,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-bread-1",
+      "retailerId": "freshco",
+      "itemId": "bread",
+      "brand": "Hearth",
+      "name": "Hearth sandwich bread",
+      "size": 1,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 399,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-paper-towels-1",
+      "retailerId": "freshco",
+      "itemId": "paper-towels",
+      "brand": "Tidy",
+      "name": "Tidy paper towels",
+      "size": 6,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 899,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-dish-soap-1",
+      "retailerId": "freshco",
+      "itemId": "dish-soap",
+      "brand": "Tidy",
+      "name": "Tidy dish soap",
+      "size": 24,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 349,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-frozen-peas-1",
+      "retailerId": "freshco",
+      "itemId": "frozen-peas",
+      "brand": "Polar",
+      "name": "Polar frozen peas",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 229,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-frozen-berries-1",
+      "retailerId": "freshco",
+      "itemId": "frozen-berries",
+      "brand": "Polar",
+      "name": "Polar frozen mixed berries",
+      "size": 32,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 799,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-frozen-berries-2",
+      "retailerId": "freshco",
+      "itemId": "frozen-berries",
+      "brand": "Sunrow",
+      "name": "Sunrow frozen mixed berries",
+      "size": 32,
+      "unit": "oz",
+      "organic": true,
+      "priceCents": 999,
+      "priceUpdatedAt": "2025-12-21T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-bananas-1",
+      "retailerId": "valuemart",
+      "itemId": "bananas",
+      "brand": "Field Day",
+      "name": "Field Day bananas",
+      "size": 1,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 26,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-spinach-1",
+      "retailerId": "valuemart",
+      "itemId": "spinach",
+      "brand": "Field Day",
+      "name": "Field Day baby spinach",
+      "size": 5,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 307,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-spinach-2",
+      "retailerId": "valuemart",
+      "itemId": "spinach",
+      "brand": "Sunrow",
+      "name": "Sunrow baby spinach",
+      "size": 5,
+      "unit": "oz",
+      "organic": true,
+      "priceCents": 395,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-apples-1",
+      "retailerId": "valuemart",
+      "itemId": "apples",
+      "brand": "Field Day",
+      "name": "Field Day gala apples",
+      "size": 3,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 439,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-tomatoes-1",
+      "retailerId": "valuemart",
+      "itemId": "tomatoes",
+      "brand": "Field Day",
+      "name": "Field Day roma tomatoes",
+      "size": 1,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 202,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-whole-milk-1",
+      "retailerId": "valuemart",
+      "itemId": "whole-milk",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill whole milk",
+      "size": 128,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 422,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-whole-milk-2",
+      "retailerId": "valuemart",
+      "itemId": "whole-milk",
+      "brand": "Sunrow",
+      "name": "Sunrow whole milk",
+      "size": 0.5,
+      "unit": "gal",
+      "organic": true,
+      "priceCents": 378,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-oat-milk-1",
+      "retailerId": "valuemart",
+      "itemId": "oat-milk",
+      "brand": "Rolling Oat",
+      "name": "Rolling Oat oat milk",
+      "size": 64,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 395,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-almond-milk-1",
+      "retailerId": "valuemart",
+      "itemId": "almond-milk",
+      "brand": "Grove",
+      "name": "Grove almond milk",
+      "size": 64,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 342,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-eggs-1",
+      "retailerId": "valuemart",
+      "itemId": "eggs",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill large eggs",
+      "size": 12,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 351,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-eggs-2",
+      "retailerId": "valuemart",
+      "itemId": "eggs",
+      "brand": "Sunrow",
+      "name": "Sunrow large eggs",
+      "size": 12,
+      "unit": "ct",
+      "organic": true,
+      "priceCents": 527,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-plain-yogurt-1",
+      "retailerId": "valuemart",
+      "itemId": "plain-yogurt",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill plain yogurt",
+      "size": 32,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 334,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-cheddar-1",
+      "retailerId": "valuemart",
+      "itemId": "cheddar",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill sharp cheddar",
+      "size": 8,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 395,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-butter-1",
+      "retailerId": "valuemart",
+      "itemId": "butter",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill salted butter",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 483,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-chicken-1",
+      "retailerId": "valuemart",
+      "itemId": "chicken",
+      "brand": "Ridgeway",
+      "name": "Ridgeway chicken breast",
+      "size": 2,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 791,
+      "priceUpdatedAt": "2025-12-26T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-ground-beef-1",
+      "retailerId": "valuemart",
+      "itemId": "ground-beef",
+      "brand": "Ridgeway",
+      "name": "Ridgeway ground beef",
+      "size": 1,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 571,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-rice-1",
+      "retailerId": "valuemart",
+      "itemId": "rice",
+      "brand": "Lotus Bay",
+      "name": "Lotus Bay jasmine rice",
+      "size": 10,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 1399,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-pasta-1",
+      "retailerId": "valuemart",
+      "itemId": "pasta",
+      "brand": "Nonna Lu",
+      "name": "Nonna Lu spaghetti",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 175,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-olive-oil-1",
+      "retailerId": "valuemart",
+      "itemId": "olive-oil",
+      "brand": "Costa Verde",
+      "name": "Costa Verde olive oil",
+      "size": 16.9,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": null,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-peanut-butter-1",
+      "retailerId": "valuemart",
+      "itemId": "peanut-butter",
+      "brand": "Value Pick",
+      "name": "Value Pick peanut butter",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 263,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-peanut-butter-2",
+      "retailerId": "valuemart",
+      "itemId": "peanut-butter",
+      "brand": "Hillside",
+      "name": "Hillside peanut butter",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 395,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-oats-1",
+      "retailerId": "valuemart",
+      "itemId": "oats",
+      "brand": "Lotus Bay",
+      "name": "Lotus Bay rolled oats",
+      "size": 42,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 439,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-honey-1",
+      "retailerId": "valuemart",
+      "itemId": "honey",
+      "brand": "Bee Line",
+      "name": "Bee Line honey",
+      "size": 12,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 615,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-bread-1",
+      "retailerId": "valuemart",
+      "itemId": "bread",
+      "brand": "Hearth",
+      "name": "Hearth sandwich bread",
+      "size": 1,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 351,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-paper-towels-1",
+      "retailerId": "valuemart",
+      "itemId": "paper-towels",
+      "brand": "Tidy",
+      "name": "Tidy paper towels",
+      "size": 6,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 791,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-dish-soap-1",
+      "retailerId": "valuemart",
+      "itemId": "dish-soap",
+      "brand": "Tidy",
+      "name": "Tidy dish soap",
+      "size": 24,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 307,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-frozen-peas-1",
+      "retailerId": "valuemart",
+      "itemId": "frozen-peas",
+      "brand": "Polar",
+      "name": "Polar frozen peas",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 202,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-frozen-berries-1",
+      "retailerId": "valuemart",
+      "itemId": "frozen-berries",
+      "brand": "Polar",
+      "name": "Polar frozen mixed berries",
+      "size": 32,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 703,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "valuemart-frozen-berries-2",
+      "retailerId": "valuemart",
+      "itemId": "frozen-berries",
+      "brand": "Sunrow",
+      "name": "Sunrow frozen mixed berries",
+      "size": 32,
+      "unit": "oz",
+      "organic": true,
+      "priceCents": 879,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-bananas-1",
+      "retailerId": "greenleaf",
+      "itemId": "bananas",
+      "brand": "Field Day",
+      "name": "Field Day bananas",
+      "size": 1,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 32,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-spinach-1",
+      "retailerId": "greenleaf",
+      "itemId": "spinach",
+      "brand": "Field Day",
+      "name": "Field Day baby spinach",
+      "size": 5,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 391,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-spinach-2",
+      "retailerId": "greenleaf",
+      "itemId": "spinach",
+      "brand": "Sunrow",
+      "name": "Sunrow baby spinach",
+      "size": 5,
+      "unit": "oz",
+      "organic": true,
+      "priceCents": 503,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-apples-1",
+      "retailerId": "greenleaf",
+      "itemId": "apples",
+      "brand": "Field Day",
+      "name": "Field Day gala apples",
+      "size": 3,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 559,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-avocados-1",
+      "retailerId": "greenleaf",
+      "itemId": "avocados",
+      "brand": "Field Day",
+      "name": "Field Day avocados",
+      "size": 4,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 559,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-tomatoes-1",
+      "retailerId": "greenleaf",
+      "itemId": "tomatoes",
+      "brand": "Field Day",
+      "name": "Field Day roma tomatoes",
+      "size": 1,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 256,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-whole-milk-1",
+      "retailerId": "greenleaf",
+      "itemId": "whole-milk",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill whole milk",
+      "size": 64,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 279,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-whole-milk-2",
+      "retailerId": "greenleaf",
+      "itemId": "whole-milk",
+      "brand": "Sunrow",
+      "name": "Sunrow whole milk",
+      "size": 0.5,
+      "unit": "gal",
+      "organic": true,
+      "priceCents": 480,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-almond-milk-1",
+      "retailerId": "greenleaf",
+      "itemId": "almond-milk",
+      "brand": "Grove",
+      "name": "Grove almond milk",
+      "size": 64,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 436,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-eggs-1",
+      "retailerId": "greenleaf",
+      "itemId": "eggs",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill large eggs",
+      "size": 12,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 447,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-eggs-2",
+      "retailerId": "greenleaf",
+      "itemId": "eggs",
+      "brand": "Sunrow",
+      "name": "Sunrow large eggs",
+      "size": 12,
+      "unit": "ct",
+      "organic": true,
+      "priceCents": 671,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-greek-yogurt-1",
+      "retailerId": "greenleaf",
+      "itemId": "greek-yogurt",
+      "brand": "Kalos",
+      "name": "Kalos greek yogurt",
+      "size": 32,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 671,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-plain-yogurt-1",
+      "retailerId": "greenleaf",
+      "itemId": "plain-yogurt",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill plain yogurt",
+      "size": 32,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 424,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-cheddar-1",
+      "retailerId": "greenleaf",
+      "itemId": "cheddar",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill sharp cheddar",
+      "size": 8,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 503,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-butter-1",
+      "retailerId": "greenleaf",
+      "itemId": "butter",
+      "brand": "Meadow Hill",
+      "name": "Meadow Hill salted butter",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 615,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-chicken-1",
+      "retailerId": "greenleaf",
+      "itemId": "chicken",
+      "brand": "Ridgeway",
+      "name": "Ridgeway chicken breast",
+      "size": 2,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 1007,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110"
+      ]
+    },
+    {
+      "id": "greenleaf-ground-beef-1",
+      "retailerId": "greenleaf",
+      "itemId": "ground-beef",
+      "brand": "Ridgeway",
+      "name": "Ridgeway ground beef",
+      "size": 1,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 727,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110"
+      ]
+    },
+    {
+      "id": "greenleaf-rice-1",
+      "retailerId": "greenleaf",
+      "itemId": "rice",
+      "brand": "Lotus Bay",
+      "name": "Lotus Bay jasmine rice",
+      "size": 5,
+      "unit": "lb",
+      "organic": false,
+      "priceCents": 895,
+      "priceUpdatedAt": "2025-12-24T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-pasta-1",
+      "retailerId": "greenleaf",
+      "itemId": "pasta",
+      "brand": "Nonna Lu",
+      "name": "Nonna Lu spaghetti",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 223,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-olive-oil-1",
+      "retailerId": "greenleaf",
+      "itemId": "olive-oil",
+      "brand": "Costa Verde",
+      "name": "Costa Verde olive oil",
+      "size": 16.9,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 1007,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-peanut-butter-1",
+      "retailerId": "greenleaf",
+      "itemId": "peanut-butter",
+      "brand": "Value Pick",
+      "name": "Value Pick peanut butter",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 335,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-peanut-butter-2",
+      "retailerId": "greenleaf",
+      "itemId": "peanut-butter",
+      "brand": "Hillside",
+      "name": "Hillside peanut butter",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 503,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-oats-1",
+      "retailerId": "greenleaf",
+      "itemId": "oats",
+      "brand": "Lotus Bay",
+      "name": "Lotus Bay rolled oats",
+      "size": 42,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 559,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-honey-1",
+      "retailerId": "greenleaf",
+      "itemId": "honey",
+      "brand": "Bee Line",
+      "name": "Bee Line honey",
+      "size": 12,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 783,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-coffee-1",
+      "retailerId": "greenleaf",
+      "itemId": "coffee",
+      "brand": "Night Owl",
+      "name": "Night Owl ground coffee",
+      "size": 12,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 1119,
+      "priceUpdatedAt": "2025-12-27T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-bread-1",
+      "retailerId": "greenleaf",
+      "itemId": "bread",
+      "brand": "Hearth",
+      "name": "Hearth sandwich bread",
+      "size": 1,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 447,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-paper-towels-1",
+      "retailerId": "greenleaf",
+      "itemId": "paper-towels",
+      "brand": "Tidy",
+      "name": "Tidy paper towels",
+      "size": 6,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 1007,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-dish-soap-1",
+      "retailerId": "greenleaf",
+      "itemId": "dish-soap",
+      "brand": "Tidy",
+      "name": "Tidy dish soap",
+      "size": 24,
+      "unit": "fl_oz",
+      "organic": false,
+      "priceCents": 391,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-frozen-peas-1",
+      "retailerId": "greenleaf",
+      "itemId": "frozen-peas",
+      "brand": "Polar",
+      "name": "Polar frozen peas",
+      "size": 16,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 256,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-frozen-berries-1",
+      "retailerId": "greenleaf",
+      "itemId": "frozen-berries",
+      "brand": "Polar",
+      "name": "Polar frozen mixed berries",
+      "size": 32,
+      "unit": "oz",
+      "organic": false,
+      "priceCents": 895,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "greenleaf-frozen-berries-2",
+      "retailerId": "greenleaf",
+      "itemId": "frozen-berries",
+      "brand": "Sunrow",
+      "name": "Sunrow frozen mixed berries",
+      "size": 32,
+      "unit": "oz",
+      "organic": true,
+      "priceCents": 1119,
+      "priceUpdatedAt": "2026-01-04T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    },
+    {
+      "id": "freshco-bananas-dup",
+      "retailerId": "freshco",
+      "itemId": "bananas",
+      "brand": "Field Day",
+      "name": "Field Day bananas",
+      "size": 1,
+      "unit": "ct",
+      "organic": false,
+      "priceCents": 33,
+      "priceUpdatedAt": "2026-01-03T09:00:00.000Z",
+      "zips": [
+        "94110",
+        "94612"
+      ]
+    }
+  ],
+  "pantry": [
+    {
+      "id": "pantry-eggs",
+      "itemId": "eggs",
+      "quantity": 3,
+      "unit": "ct",
+      "dailyUse": 1.5,
+      "lowThreshold": 4,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-whole-milk",
+      "itemId": "whole-milk",
+      "quantity": 0.3,
+      "unit": "gal",
+      "dailyUse": 0.12,
+      "lowThreshold": 0.25,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-bananas",
+      "itemId": "bananas",
+      "quantity": 2,
+      "unit": "ct",
+      "dailyUse": 1,
+      "lowThreshold": 2,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-spinach",
+      "itemId": "spinach",
+      "quantity": 4,
+      "unit": "oz",
+      "dailyUse": 0.8,
+      "lowThreshold": 2,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-rice",
+      "itemId": "rice",
+      "quantity": 3,
+      "unit": "lb",
+      "dailyUse": 0.25,
+      "lowThreshold": 1,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-pasta",
+      "itemId": "pasta",
+      "quantity": 20,
+      "unit": "oz",
+      "dailyUse": 1.5,
+      "lowThreshold": 8,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-olive-oil",
+      "itemId": "olive-oil",
+      "quantity": 10,
+      "unit": "fl_oz",
+      "dailyUse": 0.4,
+      "lowThreshold": 4,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-peanut-butter",
+      "itemId": "peanut-butter",
+      "quantity": 9,
+      "unit": "oz",
+      "dailyUse": 0.9,
+      "lowThreshold": 4,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-oats",
+      "itemId": "oats",
+      "quantity": 30,
+      "unit": "oz",
+      "dailyUse": 1.5,
+      "lowThreshold": 10,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-coffee",
+      "itemId": "coffee",
+      "quantity": 7,
+      "unit": "oz",
+      "dailyUse": 0.6,
+      "lowThreshold": 3,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-bread",
+      "itemId": "bread",
+      "quantity": 1,
+      "unit": "ct",
+      "dailyUse": 0.15,
+      "lowThreshold": 0.5,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-butter",
+      "itemId": "butter",
+      "quantity": 12,
+      "unit": "oz",
+      "dailyUse": 0.5,
+      "lowThreshold": 4,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-cheddar",
+      "itemId": "cheddar",
+      "quantity": 6,
+      "unit": "oz",
+      "dailyUse": 0.6,
+      "lowThreshold": 2,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-paper-towels",
+      "itemId": "paper-towels",
+      "quantity": 3,
+      "unit": "ct",
+      "dailyUse": 0.2,
+      "lowThreshold": 1,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    },
+    {
+      "id": "pantry-frozen-peas",
+      "itemId": "frozen-peas",
+      "quantity": 16,
+      "unit": "oz",
+      "dailyUse": 0.5,
+      "lowThreshold": 6,
+      "updatedAt": "2026-01-05T09:00:00.000Z"
+    }
+  ],
+  "lists": [
+    {
+      "id": "list-weekly",
+      "name": "Weekly staples",
+      "revision": 1,
+      "items": [
+        {
+          "id": "li-weekly-1",
+          "itemId": "whole-milk",
+          "text": "Whole milk",
+          "quantity": 1,
+          "unit": "gal"
+        },
+        {
+          "id": "li-weekly-2",
+          "itemId": "eggs",
+          "text": "Large eggs",
+          "quantity": 12,
+          "unit": "ct"
+        },
+        {
+          "id": "li-weekly-3",
+          "itemId": "bananas",
+          "text": "Bananas",
+          "quantity": 6,
+          "unit": "ct"
+        },
+        {
+          "id": "li-weekly-4",
+          "itemId": "peanut-butter",
+          "text": "Peanut butter",
+          "quantity": 16,
+          "unit": "oz",
+          "pinnedBrand": "Hillside"
+        }
+      ]
+    },
+    {
+      "id": "list-tacos",
+      "name": "Taco night",
+      "revision": 1,
+      "items": [
+        {
+          "id": "li-tacos-1",
+          "itemId": "ground-beef",
+          "text": "Ground beef",
+          "quantity": 2,
+          "unit": "lb"
+        },
+        {
+          "id": "li-tacos-2",
+          "itemId": "avocados",
+          "text": "Avocados",
+          "quantity": 4,
+          "unit": "ct"
+        },
+        {
+          "id": "li-tacos-3",
+          "itemId": "tomatoes",
+          "text": "Roma tomatoes",
+          "quantity": 1,
+          "unit": "lb"
+        },
+        {
+          "id": "li-tacos-4",
+          "itemId": "cheddar",
+          "text": "Sharp cheddar",
+          "quantity": 8,
+          "unit": "oz"
+        }
+      ]
+    },
+    {
+      "id": "list-breakfast",
+      "name": "Breakfast restock",
+      "revision": 1,
+      "items": [
+        {
+          "id": "li-bfast-1",
+          "itemId": null,
+          "text": "milk",
+          "quantity": 64,
+          "unit": "fl_oz"
+        },
+        {
+          "id": "li-bfast-2",
+          "itemId": "oats",
+          "text": "Rolled oats",
+          "quantity": 42,
+          "unit": "oz"
+        },
+        {
+          "id": "li-bfast-3",
+          "itemId": "honey",
+          "text": "Honey",
+          "quantity": 12,
+          "unit": "oz"
+        },
+        {
+          "id": "li-bfast-4",
+          "itemId": null,
+          "text": "yogurt",
+          "quantity": 32,
+          "unit": "oz"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "profile-organic",
+      "name": "Organic-first household",
+      "organicCategories": [
+        "produce",
+        "dairy"
+      ],
+      "pinnedBrands": {
+        "peanut-butter": "Hillside"
+      },
+      "favoriteItemIds": [
+        "coffee",
+        "spinach"
+      ],
+      "discoverCategories": [
+        "dairy",
+        "frozen"
+      ],
+      "dismissedProductIds": []
+    },
+    {
+      "id": "profile-budget",
+      "name": "Budget-first household",
+      "organicCategories": [],
+      "pinnedBrands": {},
+      "favoriteItemIds": [
+        "rice",
+        "pasta"
+      ],
+      "discoverCategories": [
+        "pantry",
+        "produce"
+      ],
+      "dismissedProductIds": []
+    }
+  ],
+  "history": [
+    {
+      "id": "trip-seed-1",
+      "retailerId": "valuemart",
+      "completedAt": "2025-12-01T09:00:00.000Z",
+      "lines": [
+        {
+          "itemId": "rice",
+          "quantity": 10,
+          "unit": "lb"
+        },
+        {
+          "itemId": "whole-milk",
+          "quantity": 1,
+          "unit": "gal"
+        },
+        {
+          "itemId": "bananas",
+          "quantity": 6,
+          "unit": "ct"
+        }
+      ],
+      "totalCents": 2161,
+      "savingsCents": 240,
+      "source": "seed"
+    },
+    {
+      "id": "trip-seed-2",
+      "retailerId": "freshco",
+      "completedAt": "2025-12-08T09:00:00.000Z",
+      "lines": [
+        {
+          "itemId": "whole-milk",
+          "quantity": 1,
+          "unit": "gal"
+        },
+        {
+          "itemId": "bananas",
+          "quantity": 6,
+          "unit": "ct"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": 12,
+          "unit": "oz"
+        }
+      ],
+      "totalCents": 1652,
+      "savingsCents": 0,
+      "source": "seed"
+    },
+    {
+      "id": "trip-seed-3",
+      "retailerId": "valuemart",
+      "completedAt": "2025-12-15T09:00:00.000Z",
+      "lines": [
+        {
+          "itemId": "whole-milk",
+          "quantity": 1,
+          "unit": "gal"
+        },
+        {
+          "itemId": "bananas",
+          "quantity": 6,
+          "unit": "ct"
+        },
+        {
+          "itemId": "eggs",
+          "quantity": 12,
+          "unit": "ct"
+        }
+      ],
+      "totalCents": 963,
+      "savingsCents": 155,
+      "source": "seed"
+    },
+    {
+      "id": "trip-seed-4",
+      "retailerId": "freshco",
+      "completedAt": "2025-12-22T09:00:00.000Z",
+      "lines": [
+        {
+          "itemId": "whole-milk",
+          "quantity": 1,
+          "unit": "gal"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": 12,
+          "unit": "oz"
+        },
+        {
+          "itemId": "eggs",
+          "quantity": 12,
+          "unit": "ct"
+        }
+      ],
+      "totalCents": 1877,
+      "savingsCents": 92,
+      "source": "seed"
+    },
+    {
+      "id": "trip-seed-5",
+      "retailerId": "valuemart",
+      "completedAt": "2025-12-29T09:00:00.000Z",
+      "lines": [
+        {
+          "itemId": "whole-milk",
+          "quantity": 1,
+          "unit": "gal"
+        },
+        {
+          "itemId": "bananas",
+          "quantity": 6,
+          "unit": "ct"
+        },
+        {
+          "itemId": "spinach",
+          "quantity": 5,
+          "unit": "oz"
+        }
+      ],
+      "totalCents": 869,
+      "savingsCents": 118,
+      "source": "seed"
+    },
+    {
+      "id": "trip-seed-6",
+      "retailerId": "greenleaf",
+      "completedAt": "2026-01-01T09:00:00.000Z",
+      "lines": [
+        {
+          "itemId": "olive-oil",
+          "quantity": 16.9,
+          "unit": "fl_oz"
+        },
+        {
+          "itemId": "pasta",
+          "quantity": 32,
+          "unit": "oz"
+        }
+      ],
+      "totalCents": 1452,
+      "savingsCents": 0,
+      "source": "seed"
+    }
+  ]
+}

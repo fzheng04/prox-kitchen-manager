@@ -1,0 +1,26 @@
+:root{
+--border-w:2px;
+--border-w-thin:1.5px;
+--outline:var(--border-w) solid var(--border-strong);
+
+--radius-xs:6px;
+--radius-sm:10px;
+--radius-md:14px;
+--radius-lg:20px;
+--radius-xl:28px;
+--radius-pill:999px;
+
+/* Straight-down "tile" shadows — ink, never blurred */
+--shadow-hard-sm:0 2px 0 var(--ink);
+--shadow-hard:0 3px 0 var(--ink);
+--shadow-hard-lg:0 4px 0 var(--ink);
+/* Soft shadow for floating layers only */
+--shadow-paper:0 8px 20px rgba(28,34,51,.10);
+--shadow-sheet:0 -6px 30px rgba(28,34,51,.18);
+
+--ease-out:cubic-bezier(.2,.8,.2,1);/* @kind other */
+--ease-spring:cubic-bezier(.34,1.56,.64,1);/* @kind other */
+--dur-fast:120ms;/* @kind other */
+--dur-base:200ms;/* @kind other */
+--press-shift:translateY(3px);/* @kind other */
+}

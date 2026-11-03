@@ -1,0 +1,17 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Display" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:var(--surface-app);font-family:var(--font-body);color:var(--text-primary)}.r{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:18px}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const NS = window.ProxDesignSystem_1e60c5;
+const {Icon,Button,IconButton,Pill,Badge,CategoryChip,SearchField,SegmentedControl,QuantityStepper,Card,EmptyState,ProgressBar,ReasonTag,SavingsCard,AppHeader,TabBar,NotebookList,NotebookRow,RetailerRow} = NS;
+function Demo(){ return <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:20}}>
+<Card padding={0}><EmptyState title="Your pantry is empty" body="Log what you have and we'll tell you what to restock before it runs out." action={<Button size="sm" icon="plus">Add items</Button>}/></Card>
+<div style={{display:'grid',gap:16,alignContent:'start'}}><SavingsCard amount="$4.12" badge="12% less" progress={0.42} onInfo={()=>{}}/>
+<Card tone="white" padding={14} shadow="md"><div style={{display:'flex',flexWrap:'wrap',gap:6}}><ReasonTag kind="low">1 of 12 left</ReasonTag><ReasonTag kind="depletion">Runs out in ~2 days</ReasonTag><ReasonTag kind="recurrence">Every 7 days</ReasonTag><ReasonTag kind="preference">Pinned organic</ReasonTag></div></Card>
+<ProgressBar value={0.3} tone="amber"/></div></div>; }
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>

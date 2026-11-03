@@ -1,0 +1,16 @@
+:root{
+/* From src/constants/theme.ts Spacing (half..six), plus 12/20 in-betweens seen in screens */
+--space-half:2px;
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:20px;
+--space-6:24px;
+--space-8:32px;
+--space-16:64px;
+--screen-gutter:16px;
+--tabbar-height:84px;
+--max-content-width:800px;
+--hit-min:44px;
+}
