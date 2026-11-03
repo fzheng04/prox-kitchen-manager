@@ -243,7 +243,13 @@ function ListRow({ listItem, expanded, onToggle }: { listItem: ListItem; expande
           ) : (
             <>
               <View style={styles.editorRow}>
-                <QuantityStepper value={listItem.quantity} min={step} step={step} onChange={(quantity) => update({ quantity })} />
+                <QuantityStepper
+                  value={listItem.quantity}
+                  min={step}
+                  step={step}
+                  label={`${listItem.text} quantity`}
+                  onChange={(quantity) => update({ quantity })}
+                />
                 <View style={{ flex: 1 }}>
                   <SegmentedControl
                     options={unitsForFamily(unitFamily(listItem.unit)).map((u) => ({ value: u, label: unitLabel(u) }))}

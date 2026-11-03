@@ -107,6 +107,21 @@ export function purchaseRecurrence(itemId: string, history: Trip[]): { everyDays
 }
 
 /**
+ * Pantry rows in display order: newest first, like a stack. New items are appended to the pantry
+ * (see applyPurchase) and edits update entries in place, so changing a quantity, restocking an
+ * item you already have, or advancing the clock never moves a row. Entries whose item isn't in
+ * the catalog are left out.
+ */
+export function pantryRows(pantry: PantryItem[], items: CatalogItem[]): { pantry: PantryItem; item: CatalogItem }[] {
+  return pantry
+    .flatMap((p) => {
+      const item = items.find((i) => i.id === p.itemId);
+      return item ? [{ pantry: p, item }] : [];
+    })
+    .reverse();
+}
+
+/**
  * A sensible amount to start with when stocking an item by hand: what was bought last time, else
  * one package (the first listing by id, so it's deterministic), else one of the item's unit.
  */

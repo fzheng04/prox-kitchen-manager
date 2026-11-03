@@ -48,6 +48,20 @@ export function unitsForFamily(family: UnitFamily): Unit[] {
   return ['ct', 'dozen'];
 }
 
+export const MAX_QUANTITY = 9999;
+
+/**
+ * Reads a quantity the user typed. Accepts "2", "1.5", ".5" and a decimal comma ("1,5").
+ * Returns null for anything that isn't a plain non-negative number (blank, "abc", "-1", "1e3"),
+ * so the caller can keep the previous value. Rounds to 2 decimals and clamps to [min, MAX_QUANTITY].
+ */
+export function parseQuantity(text: string, min = 0): number | null {
+  const cleaned = text.trim().replace(',', '.');
+  if (!/^(\d+\.?\d*|\.\d+)$/.test(cleaned)) return null;
+  const n = Math.round(Number(cleaned) * 100) / 100;
+  return Math.min(MAX_QUANTITY, Math.max(min, n));
+}
+
 export function formatQuantity(quantity: number, unit: Unit): string {
   const rounded = Math.round(quantity * 10) / 10;
   return `${rounded} ${unitLabel(unit)}`;

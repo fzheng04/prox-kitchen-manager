@@ -57,6 +57,8 @@ export function Screen({
       {header}
       <ScrollView
         keyboardShouldPersistTaps="handled"
+        // The iOS number pad has no return key, so scrolling is one way to finish typing a quantity.
+        keyboardDismissMode="on-drag"
         contentContainerStyle={styles.scrollContent}
         contentInsetAdjustmentBehavior="never">
         <View style={[styles.column, contentStyle]}>{children}</View>

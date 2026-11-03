@@ -13,7 +13,7 @@ import { Colors, Spacing } from '@/constants/theme';
 import { formatDate, weekIndex, weekStart } from '@/logic/clock';
 import { searchCatalog } from '@/logic/matching';
 import { formatCents } from '@/logic/money';
-import { currentQuantity, daysLeft, isLow, REASON_LABEL, typicalAmount } from '@/logic/pantry';
+import { currentQuantity, daysLeft, isLow, pantryRows, REASON_LABEL, typicalAmount } from '@/logic/pantry';
 import { weekSummary } from '@/logic/summary';
 import type { Category } from '@/logic/types';
 import { formatQuantity, unitFamily, unitLabel } from '@/logic/units';
@@ -221,13 +221,10 @@ function Pantry() {
 
   const results = useMemo(() => searchCatalog(query, catalog.items, catalog.products), [query, catalog]);
 
+  // Newest first and never re-sorted, so editing a quantity doesn't move the row.
   const rows = useMemo(
-    () =>
-      state.pantry
-        .map((p) => ({ p, item: catalog.items.find((i) => i.id === p.itemId) }))
-        .filter((r) => r.item && (filter === 'all' || r.item.category === filter))
-        .sort((a, b) => daysLeft(a.p, now) - daysLeft(b.p, now) || a.item!.name.localeCompare(b.item!.name)),
-    [state.pantry, catalog.items, filter, now],
+    () => pantryRows(state.pantry, catalog.items).filter((r) => filter === 'all' || r.item.category === filter),
+    [state.pantry, catalog.items, filter],
   );
 
   const stock = (index: number) => {
@@ -306,7 +303,7 @@ function Pantry() {
             </AppText>
           ) : (
             <Card>
-              {rows.map(({ p, item }, i) => {
+              {rows.map(({ pantry: p, item }, i) => {
                 const qty = currentQuantity(p, now);
                 const left = daysLeft(p, now);
                 const low = isLow(p, now);
@@ -315,10 +312,10 @@ function Pantry() {
                   <View key={p.id}>
                     {i > 0 ? <Divider /> : null}
                     <View style={styles.pantryRow}>
-                      <Swatch category={item!.category} size={36} />
+                      <Swatch category={item.category} size={36} />
                       <View style={{ flex: 1, gap: 2 }}>
                         <View style={styles.wrap}>
-                          <AppText variant="title">{item!.name}</AppText>
+                          <AppText variant="title">{item.name}</AppText>
                           {low ? <Badge tone="red">Low</Badge> : null}
                         </View>
                         <AppText variant="xs" tone={low ? 'danger' : 'secondary'}>
@@ -329,12 +326,13 @@ function Pantry() {
                         value={Math.round(qty * 100) / 100}
                         step={step}
                         unitLabel={unitLabel(p.unit)}
+                        label={`${item.name} quantity`}
                         onChange={(quantity) => dispatch({ type: 'SET_PANTRY_QUANTITY', pantryId: p.id, quantity })}
                       />
                       <IconButton
                         icon={Trash2}
                         size={36}
-                        label={`Remove ${item!.name} from pantry`}
+                        label={`Remove ${item.name} from pantry`}
                         onPress={() => dispatch({ type: 'REMOVE_PANTRY_ITEM', pantryId: p.id })}
                       />
                     </View>

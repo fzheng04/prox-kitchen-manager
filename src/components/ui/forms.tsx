@@ -1,7 +1,9 @@
 import { Minus, Plus, Search, X } from 'lucide-react-native';
+import { useState } from 'react';
 import { Pressable, StyleSheet, TextInput, View, type TextInputProps } from 'react-native';
 
 import { Border, Colors, Fonts, Radius } from '@/constants/theme';
+import { parseQuantity } from '@/logic/units';
 
 import { AppText } from './text';
 
@@ -72,35 +74,73 @@ export function SegmentedControl<T extends string>({
   );
 }
 
+/**
+ * Quantity with -/+ buttons and a number you can tap to type. While typing, the field holds the
+ * raw text; it's applied on blur or return. Text that isn't a valid number reverts to the old value.
+ */
 export function QuantityStepper({
   value,
   onChange,
   step = 1,
   min = 0,
   unitLabel,
+  label = 'Quantity',
 }: {
   value: number;
   onChange: (value: number) => void;
   step?: number;
   min?: number;
   unitLabel?: string;
+  /** Spoken name for the field, e.g. "Whole milk quantity". */
+  label?: string;
 }) {
   const round = (n: number) => Math.round(n * 100) / 100;
+  // null while not editing, so the field always shows the current value (which can change with the clock).
+  const [draft, setDraft] = useState<string | null>(null);
+
+  const commit = () => {
+    if (draft === null) return;
+    const next = parseQuantity(draft, min);
+    if (next !== null && next !== round(value)) onChange(next);
+    setDraft(null);
+  };
+
   return (
     <View style={styles.stepper}>
       <Pressable
         onPress={() => onChange(Math.max(min, round(value - step)))}
         disabled={value <= min}
-        accessibilityLabel="Decrease"
+        accessibilityLabel={`Decrease ${label.toLowerCase()}`}
         hitSlop={6}
         style={[styles.stepButton, value <= min && { opacity: 0.35 }]}>
         <Minus size={16} color={Colors.ink} />
       </Pressable>
-      <AppText variant="title" style={{ minWidth: 56, textAlign: 'center' }}>
-        {round(value)}
-        {unitLabel ? <AppText variant="xs" tone="secondary">{` ${unitLabel}`}</AppText> : null}
-      </AppText>
-      <Pressable onPress={() => onChange(round(value + step))} accessibilityLabel="Increase" hitSlop={6} style={styles.stepButton}>
+      <View style={styles.stepValue}>
+        <TextInput
+          value={draft ?? String(round(value))}
+          onChangeText={setDraft}
+          onFocus={() => setDraft(String(round(value)))}
+          onBlur={commit}
+          onSubmitEditing={commit}
+          keyboardType="decimal-pad"
+          returnKeyType="done"
+          selectTextOnFocus
+          maxLength={7}
+          accessibilityLabel={label}
+          accessibilityHint="Type a number"
+          style={[styles.stepInput, draft !== null && styles.stepInputEditing]}
+        />
+        {unitLabel ? (
+          <AppText variant="xs" tone="secondary">
+            {unitLabel}
+          </AppText>
+        ) : null}
+      </View>
+      <Pressable
+        onPress={() => onChange(round(value + step))}
+        accessibilityLabel={`Increase ${label.toLowerCase()}`}
+        hitSlop={6}
+        style={styles.stepButton}>
         <Plus size={16} color={Colors.ink} />
       </Pressable>
     </View>
@@ -140,4 +180,16 @@ const styles = StyleSheet.create({
     height: 40,
   },
   stepButton: { width: 38, height: '100%', alignItems: 'center', justifyContent: 'center' },
+  stepValue: { flexDirection: 'row', alignItems: 'center', gap: 3, minWidth: 56, justifyContent: 'center' },
+  stepInput: {
+    minWidth: 30,
+    paddingVertical: 2,
+    paddingHorizontal: 4,
+    borderRadius: Radius.sm,
+    textAlign: 'center',
+    fontFamily: Fonts.display,
+    fontSize: 17,
+    color: Colors.textPrimary,
+  },
+  stepInputEditing: { backgroundColor: Colors.oat100 },
 });

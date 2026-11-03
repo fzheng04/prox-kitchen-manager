@@ -13,6 +13,7 @@ import {
   currentQuantity,
   daysLeft,
   isLow,
+  pantryRows,
   purchaseRecurrence,
   setQuantity,
   typicalAmount,
@@ -20,7 +21,7 @@ import {
 import { activePrice, isStale, priceAgeDays, unitPrice } from '../src/logic/pricing';
 import { totalSaved, weekSummary } from '../src/logic/summary';
 import type { Catalog, CatalogItem, ListItem, PantryItem, Product, Profile, Retailer, Trip } from '../src/logic/types';
-import { areComparable, convert, formatQuantity, toBase, unitsForFamily } from '../src/logic/units';
+import { areComparable, convert, formatQuantity, MAX_QUANTITY, parseQuantity, toBase, unitsForFamily } from '../src/logic/units';
 import { CATALOG } from '../src/state/catalog';
 import { loadState, saveState, STORAGE_KEY } from '../src/state/persistence';
 import { initialState, makeReducer, tripIdFor } from '../src/state/reducer';
@@ -143,6 +144,32 @@ describe('units', () => {
     expect(formatQuantity(1.26, 'gal')).toBe('1.3 gal');
     expect(formatQuantity(12, 'ct')).toBe('12 ct');
     expect(formatQuantity(0.04, 'l')).toBe('0 L');
+  });
+});
+
+describe('typed quantities', () => {
+  test('plain numbers and decimals are read as typed', () => {
+    expect(parseQuantity('3')).toBe(3);
+    expect(parseQuantity(' 1.5 ')).toBe(1.5);
+    expect(parseQuantity('.5')).toBe(0.5);
+    expect(parseQuantity('2.')).toBe(2);
+  });
+
+  test('a decimal comma works like a point', () => {
+    expect(parseQuantity('1,5')).toBe(1.5);
+  });
+
+  test('anything that is not a plain non-negative number is rejected, so the old value stays', () => {
+    for (const text of ['', '   ', 'abc', '-1', '1e3', '1.2.3', '1,5,0', 'Infinity', '0x10', '1 2']) {
+      expect(parseQuantity(text)).toBeNull();
+    }
+  });
+
+  test('values are rounded to 2 decimals and clamped to the minimum and maximum', () => {
+    expect(parseQuantity('0.333')).toBe(0.33);
+    expect(parseQuantity('0', 1)).toBe(1);
+    expect(parseQuantity('0')).toBe(0);
+    expect(parseQuantity('100000')).toBe(MAX_QUANTITY);
   });
 });
 
@@ -439,6 +466,26 @@ describe('pantry', () => {
     );
     expect(out.pantry).toHaveLength(1);
     expect(out.pantry[0].quantity).toBe(3);
+  });
+
+  test('pantry rows show newest first and never move when stock changes', () => {
+    const items = [milk, rice, kale];
+    let pantry = [pantryItem({ id: 'p-milk', itemId: 'milk' }), pantryItem({ id: 'p-rice', itemId: 'rice', unit: 'lb' })];
+    const order = () => pantryRows(pantry, items).map((r) => r.pantry.id);
+    expect(order()).toEqual(['p-rice', 'p-milk']);
+
+    // Editing a quantity, or restocking an item already there, keeps every row in place.
+    pantry = pantry.map((p) => (p.id === 'p-milk' ? setQuantity(p, 0, NOW) : p));
+    pantry = applyPurchase(pantry, [{ itemId: 'rice', quantity: 10, unit: 'lb' }], NOW).pantry;
+    expect(order()).toEqual(['p-rice', 'p-milk']);
+
+    // A newly added item goes on top.
+    pantry = applyPurchase(pantry, [{ itemId: 'kale', quantity: 8, unit: 'oz' }], NOW).pantry;
+    expect(order()).toEqual(['pantry-kale', 'p-rice', 'p-milk']);
+  });
+
+  test('pantry rows skip entries whose item is not in the catalog', () => {
+    expect(pantryRows([pantryItem({ itemId: 'gone' })], [milk])).toEqual([]);
   });
 
   test('recurrence needs two purchases and uses the average gap', () => {
